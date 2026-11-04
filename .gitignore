@@ -1,0 +1,8 @@
+node_modules/
+.cache/
+counts.json
+counts.json.tmp
+.env
+.env.*
+*.log
+.DS_Store

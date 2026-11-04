@@ -1,0 +1,20 @@
+{
+  "apiVersion": 2,
+  "id": "dev.timesframe.agent-counts",
+  "name": "Times Frame Agent Counts",
+  "version": "1.0.0",
+  "description": "Exports aggregate live agent status counts into the plugin's private local data directory.",
+  "author": "Times Frame contributors",
+  "homepage": "https://github.com/howdeploy/canvastty-times-frame-agents",
+  "platforms": ["canvastty"],
+  "permissions": ["sessions:events"],
+  "services": [
+    {
+      "id": "counts",
+      "title": "Times Frame status counts",
+      "description": "Reads session metadata every three seconds and saves only working, waiting and idle counts plus a timestamp in its own data directory.",
+      "entry": "counts.mjs"
+    }
+  ],
+  "contributions": []
+}
